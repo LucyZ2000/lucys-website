@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy’s Personal Website</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <nav id="myNavbar">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/contact.html">Contact</a>  
+            </nav>
+        </header>
+        <main id="content" class="content">
+            <div class="Title">
+                <h1>
+                    (0_____0)
+                </h1>
+            </div>
+            <div class="intro-section">
+                {{ content }}
+            </div>
+			<section class="sections">
+				<a href="/about.html" class="section-button about">
+					about
+				</a>
+				<a href="/projects" class="section-button projects">
+					projects
+				</a>
+				<a href="/contact" class="section-button contact">
+					contact
+				</a>
+			</section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Lucy</p>
+    </footer>
+</body>
+</html>

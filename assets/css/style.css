@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: 	#1c2427;
+    color: #F9F6EE;
+}
+
+header, footer {
+    background-color: #1c2427;
+    color: #F9F6EE;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+nav a {
+    padding: 15px 25px;  /* Increase the padding for a larger clickable area */
+    font-size: 18px;      /* Increase the font size */
+    background-color: #1c2427;  /* Default background color */
+    border-radius: 5px;      /* Rounded corners */
+    color: #F9F6EE;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #555; /* Darker shade when hovered */
+    transform: scale(1.05);
+}
+
+nav a:active{
+    background-color: #222; /* Even darker shade when clicked */
+    transform: scale(0.98);
+}
+
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #F9F6EE;
+    margin-top: 1em;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+p {
+    color: #F9F6EE;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 1em;
+}
+
+.sections {
+    padding: 20px; /* Padding around the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+    gap: 15px;
+    width: 100%; /* Full width for proper alignment */
+}
+
+.section-button {
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    width: 100%; /* Make sure it takes the full width available */
+    height: 150px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s, opacity 0.3s;
+    margin: 20px 0;
+    position: relative;
+}
+
+.section-button span {
+    position: absolute; /* Position text absolutely within the button */
+    text-align: center;
+    width: 100%;
+}
+
+.section-button:hover {
+    background-color: #45a049;  /* Slightly darker shade when hovered */
+    transform: scale(1.05);
+}
+
+.about {
+    background-image: url('../../images/p1.JPG')
+}
+
+.projects {
+    background-image: url('../../images/p2.JPG')
+}
+
+.contact {
+    background-image: url('../../images/p3.JPG')
+}

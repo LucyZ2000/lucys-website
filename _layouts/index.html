@@ -4,16 +4,16 @@
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucy’s Personal Website</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
 <body>
     <div id="layout">
         <header>
             <nav id="myNavbar">
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/contact.html">Contact</a>  
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/about.html">About</a>
+                <a href="{{ site.baseurl }}/projects.html">Projects</a>
+                <a href="{{ site.baseurl }}/contact.html">Contact</a>  
             </nav>
         </header>
         <main id="content" class="content">
@@ -26,13 +26,13 @@
                 {{ content }}
             </div>
 			<section class="sections">
-				<a href="/about.html" class="section-button about">
+				<a href="{{ site.baseurl }}/about.html" class="section-button about">
 					about
 				</a>
-				<a href="/projects" class="section-button projects">
+				<a href="{{ site.baseurl }}/projects.html" class="section-button projects">
 					projects
 				</a>
-				<a href="/contact" class="section-button contact">
+				<a href="{{ site.baseurl }}/contact.html" class="section-button contact">
 					contact
 				</a>
 			</section>

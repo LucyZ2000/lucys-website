@@ -105,13 +105,13 @@ p {
 }
 
 .about {
-    background-image: url('../../images/p1.JPG')
+    background-image: url("{{ site.baseurl }}/images/p1.JPG")
 }
 
 .projects {
-    background-image: url('../../images/p2.JPG')
+    background-image: url("{{ site.baseurl }}/images/p2.JPG")
 }
 
 .contact {
-    background-image: url('../../images/p3.JPG')
+    background-image: url('{{ site.baseurl }}/images/p3.JPG')
 }
